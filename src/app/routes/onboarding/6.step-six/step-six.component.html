@@ -2,7 +2,7 @@
   <form [formGroup]="form">
     <div
       class="row"
-      *ngFor="let item of form.value | keyvalue; let i = index"
+      *ngFor="let item of form.value | keyvalue: returnZero; let i = index"
       [class.striped-blue]="i % 2 == 0"
       [class.striped-pink]="i % 2 !== 0"
     >

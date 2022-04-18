@@ -25,4 +25,8 @@ export class StepSixComponent implements OnInit {
     });
   }
   ngOnInit(): void {}
+
+  returnZero() {
+    return 0;
+  }
 }

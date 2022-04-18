@@ -1,18 +1,15 @@
-// input[type="checkbox"] {
-//   /* Double-sized Checkboxes */
-//   -ms-transform: scale(1.5); /* IE */
-//   -moz-transform: scale(1.5); /* FF */
-//   -webkit-transform: scale(1.5); /* Safari and Chrome */
-//   -o-transform: scale(1.5); /* Opera */
-//   padding: 10px;
-// }
-
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/mixins/_breakpoints";
 .box-1 {
   background-color: var(--bs-blue);
   color: #fff;
   padding: 20px 30px 20px 30px;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
 }
 
 .box-2 {
@@ -20,7 +17,10 @@
   color: #fff;
   padding: 20px 30px 20px 30px;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.25rem;
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
   .form-check-input:checked {
     border-color: var(--bs-pink);
     background-color: var(--bs-pink);

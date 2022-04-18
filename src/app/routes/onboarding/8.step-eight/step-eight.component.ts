@@ -9,7 +9,12 @@ import { FormProvider } from 'src/app/routes/onboarding/form-provider';
 })
 export class StepEightComponent implements OnInit {
   form: FormGroup;
-  options = ['Immediately', 'Calendar'];
+  options = [
+    'Keeping the house clean and tidy',
+    'Help with shopping and running errands',
+    'Personal care e.g. hair + foot care',
+    'Gardening',
+  ];
   constructor(private formProvider: FormProvider) {
     this.form = <FormGroup>formProvider.getForm().get('otherActivities');
     this.options.forEach((option: any) => {
