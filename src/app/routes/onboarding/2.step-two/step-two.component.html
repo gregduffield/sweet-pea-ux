@@ -1,0 +1,35 @@
+<app-step title="Who are you looking for care for?">
+  <form [formGroup]="form">
+    <div class="box-1 my-5">
+      <input
+        class="form-check-input ms-3"
+        type="checkbox"
+        id="chkLovedOne"
+        name="self"
+        value=""
+        aria-label="..."
+        formControlName="self"
+      />
+      <label for="chkLovedOne" class="ms-2">I'm looking for my loved one</label>
+    </div>
+    <div class="box-2 my-5">
+      <input
+        class="form-check-input ms-3"
+        type="checkbox"
+        id="chkSelf"
+        name="other"
+        value=""
+        aria-label="..."
+        formControlName="other"
+      />
+      <label for="chkSelf" class="ms-2">I'm looking for myself</label>
+    </div>
+    <button
+      class="btn btn-outline-primary rounded-pill px-5 my-3"
+      [disabled]="form.invalid"
+      routerLink="../step-3"
+    >
+      Next question <i class="fa fa-chevron-right"></i>
+    </button>
+  </form>
+</app-step>

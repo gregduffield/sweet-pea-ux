@@ -1,0 +1,35 @@
+<app-step title="What types of care activities would you like help with?">
+  <form [formGroup]="form">
+    <div
+      class="row"
+      *ngFor="let item of form.value | keyvalue; let i = index"
+      [class.striped-blue]="i % 2 == 0"
+      [class.striped-pink]="i % 2 !== 0"
+    >
+      <div class="col">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            [id]="'chk' + item.key"
+          />
+          <label class="form-check-label" [for]="'chk' + item.key">
+            {{ item.key }}
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col mx-auto">
+        <button
+          class="btn btn-outline-primary rounded-pill px-5 my-3"
+          [disabled]="form.invalid"
+          routerLink="../step-4"
+        >
+          Next question <i class="fa fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </form>
+</app-step>
