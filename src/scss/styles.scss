@@ -1,44 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/functions";
-
-$blue: #084b83;
-$pink: #ff66b3;
-
-$button-border-radius: 25%;
-
+@import "cabinet-grotesk";
+@import "utils";
+@import 'variables';
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
 
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
+body {
+  font-family: "CabinetGrotesk-Regular";
+  background-color: $grey;
+}
+
 h1,
 h2,
 h3 {
-  color: $blue;
+  font-family: "CabinetGrotesk-Extrabold";
 }
+
+.btn {
+  border-width: 3px !important;
+}
+
 @include media-breakpoint-up(md) {
   h1 {
     font-size: 3rem;
   }
 }
+
 .striped-blue {
   background-color: var(--bs-blue);
   color: #fff;
   padding: 20px 30px 20px 30px;
 
   margin-bottom: 10px;
+
   @include media-breakpoint-up(md) {
     font-size: 2rem;
   }
 }
+
 .striped-pink {
   background-color: var(--bs-pink);
   color: #fff;
   padding: 20px 30px 20px 30px;
 
   margin-bottom: 10px;
+
   @include media-breakpoint-up(md) {
     font-size: 2rem;
+  }
+}
+
+
+.f1-25 {
+  font-size: 1.25rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
+
+}
+
+.font-weight-bold {
+  font-family: 'CabinetGrotesk-Extrabold';
+}
+
+.blue {
+
+  .form-check-input:checked {
+    border-color: $blue;
+    background-color: $blue;
+  }
+}
+
+.pink {
+
+  .form-check-input:checked {
+    border-color: $pink;
+    background-color: $pink;
   }
 }

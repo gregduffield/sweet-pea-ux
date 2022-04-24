@@ -14,7 +14,7 @@ export class StepFiveComponent implements OnInit {
     'Lunchtime',
     'Afternoon',
     'Evening',
-    'Throught the night',
+    'Through the night',
   ];
   constructor(private formProvider: FormProvider) {
     this.form = <FormGroup>formProvider.getForm().get('times');

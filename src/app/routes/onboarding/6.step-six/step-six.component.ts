@@ -12,7 +12,7 @@ export class StepSixComponent implements OnInit {
   options = [
     'Monday',
     'Tuesday',
-    'Wendesday',
+    'Wednesday',
     'Thursday',
     'Friday',
     'Saturday',

@@ -1,3 +1,5 @@
+import { StepBoxModule } from './../../shared/step-box/step-box.module';
+import { BoxWaveModule } from './../../shared/box-wave/box-wave.module';
 import { StepNineComponent } from './9.step-nine/step-nine.component';
 import { StepEightComponent } from './8.step-eight/step-eight.component';
 import { StepSevenComponent } from './7.step-seven/step-seven.component';
@@ -46,6 +48,12 @@ const routes: Routes = [
     StepEightComponent,
     StepNineComponent,
   ],
-  imports: [CommonModule, RouterModule.forChild(routes), ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    ReactiveFormsModule,
+    StepBoxModule,
+    BoxWaveModule,
+  ],
 })
 export class OnboardingModule {}

@@ -10,7 +10,7 @@ import { FormProvider } from 'src/app/routes/onboarding/form-provider';
 export class StepFourComponent implements OnInit {
   form: FormGroup;
   options = [
-    'Living wirth dementia',
+    'Living with dementia',
     'Wheelchair user',
     'Deaf or hard of hearing',
     'Other',

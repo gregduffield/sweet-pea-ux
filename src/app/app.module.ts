@@ -8,6 +8,7 @@ import { LayoutComponent } from './routes/layout/layout.component';
 import { HeaderComponent } from './routes/layout/header/header.component';
 import { FooterComponent } from './routes/layout/footer/footer.component';
 import { OnboardingComponent } from './routes/onboarding/onboarding.component';
+import { StepBoxComponent } from './shared/step-box/step-box.component';
 
 @NgModule({
   declarations: [

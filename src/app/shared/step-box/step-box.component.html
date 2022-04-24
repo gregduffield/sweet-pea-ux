@@ -1,0 +1,17 @@
+<div [ngClass]="class">
+
+  <app-box-wave [color]="color"
+                position="top"></app-box-wave>
+
+  <div [class.bg-blue]="color === 'blue'"
+       [class.bg-pink]="color === 'pink'"
+       [ngClass]="align"
+       class=" text-white font-weight-bold f1-25  p-2">
+
+    <ng-content></ng-content>
+
+
+  </div>
+  <app-box-wave [color]="color"
+                position="bottom"></app-box-wave>
+</div>

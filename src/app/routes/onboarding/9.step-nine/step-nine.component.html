@@ -1,45 +1,40 @@
 <app-step title="One last thing...">
   <form [formGroup]="form">
-    <div class="row striped-blue">
+    <app-step-box color="blue">
       <div class="col"></div>
       What is the age of the person who would like some extra help?
-    </div>
+    </app-step-box>
     <div class="row">
       <div class="col">
         We're not just being nosey, it's just that some providers are more
-        scpecialised in supporting younger adults.
+        specialised in supporting younger adults.
       </div>
     </div>
-    <div class="row striped-pink">
-      <label for="age" class="col-4 col-md-3 col-form-label">Age</label>
-      <div class="col-8 col-md-9">
-        <input
-          type="number"
-          class="form-control form-control-lg set-width"
-          id="age"
-          formControlName="age"
-        />
+    <app-step-box color="pink"
+                  class="row g-0">
+      <label for="age"
+             class="col-4 col-md-4 col-form-label d-inline-block">Age</label>
+      <div class="col-8 col-md-8 d-inline-block">
+        <input type="number"
+               class="form-control form-control-lg set-width"
+               id="age"
+               formControlName="age" />
       </div>
-      <label for="postcode" class="col-4 col-md-3 col-form-label"
-        >Postcode</label
-      >
-      <div class="col-8 col-md-9 mt-2">
-        <input
-          type="text"
-          class="form-control form-control-lg set-width"
-          id="postcode"
-          formControlName="postcode"
-        />
+      <label for="postcode"
+             class="col-4 col-md-4 col-form-label d-inline-block">Postcode</label>
+      <div class="col-8 col-md-8 mt-2 d-inline-block">
+        <input type="text"
+               class="form-control form-control-lg set-width"
+               id="postcode"
+               formControlName="postcode" />
       </div>
-    </div>
+    </app-step-box>
 
     <div class="row">
       <div class="col mx-auto">
-        <button
-          class="btn btn-outline-primary rounded-pill px-5 my-3"
-          [disabled]="form.invalid"
-          routerLink="../results"
-        >
+        <button class="btn btn-outline-blue rounded-pill px-5 my-3"
+                [disabled]="form.invalid"
+                routerLink="../results">
           Find care <i class="fa fa-chevron-right"></i>
         </button>
       </div>
